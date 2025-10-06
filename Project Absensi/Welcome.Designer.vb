@@ -23,8 +23,6 @@ Partial Class Welcome
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -32,8 +30,12 @@ Partial Class Welcome
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -45,26 +47,6 @@ Partial Class Welcome
         Me.Label1.Size = New System.Drawing.Size(413, 82)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "WELCOME"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.Project_Absensi.My.Resources.Resources.formal_biru
-        Me.PictureBox1.Location = New System.Drawing.Point(145, 128)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(155, 230)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Magneto", 34.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 9)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(373, 72)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "HereWeGo"
         '
         'Label3
         '
@@ -135,7 +117,36 @@ Partial Class Welcome
         Me.GroupBox1.Size = New System.Drawing.Size(461, 468)
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Project_Absensi.My.Resources.Resources.formal_biru
+        Me.PictureBox1.Location = New System.Drawing.Point(145, 128)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(155, 230)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Magneto", 34.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(886, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(373, 72)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "HereWeGo"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Project_Absensi.My.Resources.Resources.HerWeGo6
+        Me.PictureBox2.Location = New System.Drawing.Point(-1, -39)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(176, 187)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 10
+        Me.PictureBox2.TabStop = False
         '
         'Welcome
         '
@@ -143,13 +154,15 @@ Partial Class Welcome
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(253, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1262, 673)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Welcome"
         Me.Text = "Welcome"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -157,7 +170,6 @@ Partial Class Welcome
 
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents TextBox1 As TextBox
@@ -165,4 +177,6 @@ Partial Class Welcome
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

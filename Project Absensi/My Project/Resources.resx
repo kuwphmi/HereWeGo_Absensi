@@ -121,4 +121,25 @@
   <data name="formal biru" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\formal biru.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="HerWeGo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HerWeGo5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HerWeGo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HerWeGo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HerWeGo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HerWeGo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HerWeGo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HerWeGo4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HerWeGo6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HerWeGo6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HerWeGo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HerWeGo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HerWeGo7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HerWeGo7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

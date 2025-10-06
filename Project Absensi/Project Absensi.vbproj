@@ -141,5 +141,26 @@
   <ItemGroup>
     <None Include="Resources\formal biru.JPG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HerWeGo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HerWeGo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HerWeGo4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HerWeGo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HerWeGo5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HerWeGo6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HerWeGo7.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

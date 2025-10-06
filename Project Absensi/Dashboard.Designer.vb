@@ -23,21 +23,33 @@ Partial Class Dashboard
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.MidnightBlue
         Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(273, 673)
         Me.Panel1.TabIndex = 0
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(7, 185)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(258, 40)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "User"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -48,14 +60,15 @@ Partial Class Dashboard
         Me.Button1.Text = "About"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'PictureBox1
         '
-        Me.Button2.Location = New System.Drawing.Point(7, 225)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(258, 40)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "User"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.PictureBox1.Image = Global.Project_Absensi.My.Resources.Resources.HerWeGo3
+        Me.PictureBox1.Location = New System.Drawing.Point(-51, -31)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(374, 195)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
         '
         'Dashboard
         '
@@ -67,6 +80,7 @@ Partial Class Dashboard
         Me.Name = "Dashboard"
         Me.Text = "Dashboard"
         Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -74,4 +88,5 @@ Partial Class Dashboard
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
