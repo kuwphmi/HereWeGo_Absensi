@@ -108,6 +108,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Pengguna.Designer.vb">
+      <DependentUpon>Pengguna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tambah Pengguna.Designer.vb">
+      <DependentUpon>Tambah Pengguna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tambah Pengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Welcome.Designer.vb">
       <DependentUpon>Welcome.vb</DependentUpon>
     </Compile>
@@ -130,6 +142,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pengguna.resx">
+      <DependentUpon>Pengguna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tambah Pengguna.resx">
+      <DependentUpon>Tambah Pengguna.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.vb</DependentUpon>
