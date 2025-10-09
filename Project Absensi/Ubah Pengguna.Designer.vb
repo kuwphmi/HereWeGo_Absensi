@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Tambah_Pengguna
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Ubah_Pengguna
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Tambah_Pengguna
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -43,9 +43,9 @@ Partial Class Tambah_Pengguna
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(150, 178)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(243, 29)
+        Me.Label1.Size = New System.Drawing.Size(208, 29)
         Me.Label1.TabIndex = 10
-        Me.Label1.Text = "Tambah Pengguna"
+        Me.Label1.Text = "Ubah Pengguna"
         '
         'Label2
         '
@@ -155,9 +155,9 @@ Partial Class Tambah_Pengguna
         Me.ComboBox1.Location = New System.Drawing.Point(203, 14)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(399, 33)
-        Me.ComboBox1.TabIndex = 15
+        Me.ComboBox1.TabIndex = 14
         '
-        'Tambah_Pengguna
+        'Ubah_Pengguna
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -167,8 +167,8 @@ Partial Class Tambah_Pengguna
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Name = "Tambah_Pengguna"
-        Me.Text = "Tambah_Pengguna"
+        Me.Name = "Ubah_Pengguna"
+        Me.Text = "Ubah_Pengguna"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
