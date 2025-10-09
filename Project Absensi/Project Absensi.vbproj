@@ -91,6 +91,12 @@
     <Compile Include="Guru.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Kelas.Designer.vb">
+      <DependentUpon>Kelas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kelas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -120,10 +126,34 @@
     <Compile Include="Pengguna.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Tambah Guru.Designer.vb">
+      <DependentUpon>Tambah Guru.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tambah Guru.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tambah Kelas.Designer.vb">
+      <DependentUpon>Tambah Kelas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tambah Kelas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Tambah Pengguna.Designer.vb">
       <DependentUpon>Tambah Pengguna.vb</DependentUpon>
     </Compile>
     <Compile Include="Tambah Pengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubah Guru.Designer.vb">
+      <DependentUpon>Ubah Guru.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ubah Guru.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubah Kelas.Designer.vb">
+      <DependentUpon>Ubah Kelas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ubah Kelas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ubah Pengguna.Designer.vb">
@@ -149,6 +179,9 @@
     <EmbeddedResource Include="Guru.resx">
       <DependentUpon>Guru.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Kelas.resx">
+      <DependentUpon>Kelas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -161,8 +194,20 @@
     <EmbeddedResource Include="Pengguna.resx">
       <DependentUpon>Pengguna.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tambah Guru.resx">
+      <DependentUpon>Tambah Guru.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tambah Kelas.resx">
+      <DependentUpon>Tambah Kelas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tambah Pengguna.resx">
       <DependentUpon>Tambah Pengguna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubah Guru.resx">
+      <DependentUpon>Ubah Guru.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubah Kelas.resx">
+      <DependentUpon>Ubah Kelas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ubah Pengguna.resx">
       <DependentUpon>Ubah Pengguna.vb</DependentUpon>
