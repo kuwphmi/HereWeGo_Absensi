@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Pengguna
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Murid
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,9 @@ Partial Class Pengguna
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Email = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Pasword = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Role = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -36,6 +33,8 @@ Partial Class Pengguna
         Me.Lanjut = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.NISN = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nama = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -45,38 +44,14 @@ Partial Class Pengguna
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Email, Me.Pasword, Me.Role})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NISN, Me.Nama})
         Me.DataGridView1.Location = New System.Drawing.Point(23, 58)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(930, 508)
-        Me.DataGridView1.TabIndex = 14
-        '
-        'Email
-        '
-        Me.Email.HeaderText = "Email"
-        Me.Email.MinimumWidth = 6
-        Me.Email.Name = "Email"
-        Me.Email.ReadOnly = True
-        Me.Email.Width = 310
-        '
-        'Pasword
-        '
-        Me.Pasword.HeaderText = "Pasword"
-        Me.Pasword.MinimumWidth = 6
-        Me.Pasword.Name = "Pasword"
-        Me.Pasword.ReadOnly = True
-        Me.Pasword.Width = 310
-        '
-        'Role
-        '
-        Me.Role.HeaderText = "Role"
-        Me.Role.MinimumWidth = 6
-        Me.Role.Name = "Role"
-        Me.Role.ReadOnly = True
-        Me.Role.Width = 310
+        Me.DataGridView1.TabIndex = 36
         '
         'Label2
         '
@@ -85,7 +60,7 @@ Partial Class Pengguna
         Me.Label2.Location = New System.Drawing.Point(200, 19)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(53, 25)
-        Me.Label2.TabIndex = 13
+        Me.Label2.TabIndex = 35
         Me.Label2.Text = "Data"
         '
         'TextBox1
@@ -95,7 +70,7 @@ Partial Class Pengguna
         Me.TextBox1.Location = New System.Drawing.Point(120, 13)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(78, 36)
-        Me.TextBox1.TabIndex = 12
+        Me.TextBox1.TabIndex = 34
         '
         'Label1
         '
@@ -104,7 +79,7 @@ Partial Class Pengguna
         Me.Label1.Location = New System.Drawing.Point(18, 19)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(103, 25)
-        Me.Label1.TabIndex = 11
+        Me.Label1.TabIndex = 33
         Me.Label1.Text = "Tampilkan"
         '
         'Button4
@@ -113,7 +88,7 @@ Partial Class Pengguna
         Me.Button4.Location = New System.Drawing.Point(265, 572)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(115, 42)
-        Me.Button4.TabIndex = 21
+        Me.Button4.TabIndex = 43
         Me.Button4.Text = "Hapus"
         Me.Button4.UseVisualStyleBackColor = True
         '
@@ -123,7 +98,7 @@ Partial Class Pengguna
         Me.Button3.Location = New System.Drawing.Point(144, 572)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(115, 42)
-        Me.Button3.TabIndex = 20
+        Me.Button3.TabIndex = 42
         Me.Button3.Text = "Ubah"
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -133,7 +108,7 @@ Partial Class Pengguna
         Me.Button2.Location = New System.Drawing.Point(23, 572)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(115, 42)
-        Me.Button2.TabIndex = 19
+        Me.Button2.TabIndex = 41
         Me.Button2.Text = "Tambah"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -143,7 +118,7 @@ Partial Class Pengguna
         Me.Button1.Location = New System.Drawing.Point(755, 572)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(93, 42)
-        Me.Button1.TabIndex = 18
+        Me.Button1.TabIndex = 40
         Me.Button1.Text = "Lihat"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -153,7 +128,7 @@ Partial Class Pengguna
         Me.Lanjut.Location = New System.Drawing.Point(854, 572)
         Me.Lanjut.Name = "Lanjut"
         Me.Lanjut.Size = New System.Drawing.Size(93, 42)
-        Me.Lanjut.TabIndex = 17
+        Me.Lanjut.TabIndex = 39
         Me.Lanjut.Text = "Lanjut"
         Me.Lanjut.UseVisualStyleBackColor = True
         '
@@ -164,7 +139,7 @@ Partial Class Pengguna
         Me.TextBox2.Location = New System.Drawing.Point(755, 13)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(198, 36)
-        Me.TextBox2.TabIndex = 16
+        Me.TextBox2.TabIndex = 38
         '
         'Label3
         '
@@ -173,10 +148,26 @@ Partial Class Pengguna
         Me.Label3.Location = New System.Drawing.Point(701, 19)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(48, 25)
-        Me.Label3.TabIndex = 15
+        Me.Label3.TabIndex = 37
         Me.Label3.Text = "Cari"
         '
-        'Pengguna
+        'NISN
+        '
+        Me.NISN.HeaderText = "NISN"
+        Me.NISN.MinimumWidth = 6
+        Me.NISN.Name = "NISN"
+        Me.NISN.ReadOnly = True
+        Me.NISN.Width = 125
+        '
+        'Nama
+        '
+        Me.Nama.HeaderText = "Nama"
+        Me.Nama.MinimumWidth = 6
+        Me.Nama.Name = "Nama"
+        Me.Nama.ReadOnly = True
+        Me.Nama.Width = 125
+        '
+        'Murid
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -193,8 +184,8 @@ Partial Class Pengguna
         Me.Controls.Add(Me.Lanjut)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label3)
-        Me.Name = "Pengguna"
-        Me.Text = "Pengguna"
+        Me.Name = "Murid"
+        Me.Text = "Murid"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -202,9 +193,6 @@ Partial Class Pengguna
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Email As DataGridViewTextBoxColumn
-    Friend WithEvents Pasword As DataGridViewTextBoxColumn
-    Friend WithEvents Role As DataGridViewTextBoxColumn
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label1 As Label
@@ -215,4 +203,6 @@ Partial Class Pengguna
     Friend WithEvents Lanjut As Button
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents NISN As DataGridViewTextBoxColumn
+    Friend WithEvents Nama As DataGridViewTextBoxColumn
 End Class

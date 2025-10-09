@@ -23,6 +23,10 @@ Partial Class Kelas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Mapel = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Guru = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Siswa = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Jadwal = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -33,10 +37,6 @@ Partial Class Kelas
         Me.Lanjut = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Mapel = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Guru = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Siswa = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Jadwal = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -44,6 +44,7 @@ Partial Class Kelas
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Mapel, Me.Guru, Me.Siswa, Me.Jadwal})
         Me.DataGridView1.Location = New System.Drawing.Point(23, 58)
@@ -53,6 +54,38 @@ Partial Class Kelas
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(930, 508)
         Me.DataGridView1.TabIndex = 25
+        '
+        'Mapel
+        '
+        Me.Mapel.HeaderText = "Mapel"
+        Me.Mapel.MinimumWidth = 6
+        Me.Mapel.Name = "Mapel"
+        Me.Mapel.ReadOnly = True
+        Me.Mapel.Width = 232
+        '
+        'Guru
+        '
+        Me.Guru.HeaderText = "Guru"
+        Me.Guru.MinimumWidth = 6
+        Me.Guru.Name = "Guru"
+        Me.Guru.ReadOnly = True
+        Me.Guru.Width = 232
+        '
+        'Siswa
+        '
+        Me.Siswa.HeaderText = "Siswa"
+        Me.Siswa.MinimumWidth = 6
+        Me.Siswa.Name = "Siswa"
+        Me.Siswa.ReadOnly = True
+        Me.Siswa.Width = 232
+        '
+        'Jadwal
+        '
+        Me.Jadwal.HeaderText = "Jadwal"
+        Me.Jadwal.MinimumWidth = 6
+        Me.Jadwal.Name = "Jadwal"
+        Me.Jadwal.ReadOnly = True
+        Me.Jadwal.Width = 232
         '
         'Label2
         '
@@ -151,38 +184,6 @@ Partial Class Kelas
         Me.Label3.Size = New System.Drawing.Size(48, 25)
         Me.Label3.TabIndex = 26
         Me.Label3.Text = "Cari"
-        '
-        'Mapel
-        '
-        Me.Mapel.HeaderText = "Mapel"
-        Me.Mapel.MinimumWidth = 6
-        Me.Mapel.Name = "Mapel"
-        Me.Mapel.ReadOnly = True
-        Me.Mapel.Width = 232
-        '
-        'Guru
-        '
-        Me.Guru.HeaderText = "Guru"
-        Me.Guru.MinimumWidth = 6
-        Me.Guru.Name = "Guru"
-        Me.Guru.ReadOnly = True
-        Me.Guru.Width = 232
-        '
-        'Siswa
-        '
-        Me.Siswa.HeaderText = "Siswa"
-        Me.Siswa.MinimumWidth = 6
-        Me.Siswa.Name = "Siswa"
-        Me.Siswa.ReadOnly = True
-        Me.Siswa.Width = 232
-        '
-        'Jadwal
-        '
-        Me.Jadwal.HeaderText = "Jadwal"
-        Me.Jadwal.MinimumWidth = 6
-        Me.Jadwal.Name = "Jadwal"
-        Me.Jadwal.ReadOnly = True
-        Me.Jadwal.Width = 232
         '
         'Kelas
         '

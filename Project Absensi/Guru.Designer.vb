@@ -23,6 +23,9 @@ Partial Class Guru
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.NIP = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nama = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Gender = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -33,9 +36,6 @@ Partial Class Guru
         Me.Lanjut = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.NIP = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nama = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Gender = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -43,6 +43,7 @@ Partial Class Guru
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NIP, Me.Nama, Me.Gender})
         Me.DataGridView1.Location = New System.Drawing.Point(23, 58)
@@ -52,6 +53,30 @@ Partial Class Guru
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(930, 508)
         Me.DataGridView1.TabIndex = 14
+        '
+        'NIP
+        '
+        Me.NIP.HeaderText = "NIP"
+        Me.NIP.MinimumWidth = 6
+        Me.NIP.Name = "NIP"
+        Me.NIP.ReadOnly = True
+        Me.NIP.Width = 310
+        '
+        'Nama
+        '
+        Me.Nama.HeaderText = "Nama"
+        Me.Nama.MinimumWidth = 6
+        Me.Nama.Name = "Nama"
+        Me.Nama.ReadOnly = True
+        Me.Nama.Width = 310
+        '
+        'Gender
+        '
+        Me.Gender.HeaderText = "Gender"
+        Me.Gender.MinimumWidth = 6
+        Me.Gender.Name = "Gender"
+        Me.Gender.ReadOnly = True
+        Me.Gender.Width = 310
         '
         'Label2
         '
@@ -150,30 +175,6 @@ Partial Class Guru
         Me.Label3.Size = New System.Drawing.Size(48, 25)
         Me.Label3.TabIndex = 15
         Me.Label3.Text = "Cari"
-        '
-        'NIP
-        '
-        Me.NIP.HeaderText = "NIP"
-        Me.NIP.MinimumWidth = 6
-        Me.NIP.Name = "NIP"
-        Me.NIP.ReadOnly = True
-        Me.NIP.Width = 310
-        '
-        'Nama
-        '
-        Me.Nama.HeaderText = "Nama"
-        Me.Nama.MinimumWidth = 6
-        Me.Nama.Name = "Nama"
-        Me.Nama.ReadOnly = True
-        Me.Nama.Width = 310
-        '
-        'Gender
-        '
-        Me.Gender.HeaderText = "Gender"
-        Me.Gender.MinimumWidth = 6
-        Me.Gender.Name = "Gender"
-        Me.Gender.ReadOnly = True
-        Me.Gender.Width = 310
         '
         'Guru
         '
