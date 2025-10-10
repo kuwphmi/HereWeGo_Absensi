@@ -31,6 +31,7 @@ Partial Class Admin
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -38,6 +39,7 @@ Partial Class Admin
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.MidnightBlue
+        Me.Panel1.Controls.Add(Me.Button6)
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Button3)
@@ -113,6 +115,15 @@ Partial Class Admin
         Me.Panel2.Size = New System.Drawing.Size(989, 673)
         Me.Panel2.TabIndex = 2
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(7, 415)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(258, 40)
+        Me.Button6.TabIndex = 7
+        Me.Button6.Text = "Tahun Ajaran"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -137,4 +148,5 @@ Partial Class Admin
     Friend WithEvents Button3 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents Button6 As Button
 End Class

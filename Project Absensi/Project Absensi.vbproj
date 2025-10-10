@@ -138,6 +138,18 @@
     <Compile Include="Pengguna.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presensi.Designer.vb">
+      <DependentUpon>Presensi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presensi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tahun Ajaran.Designer.vb">
+      <DependentUpon>Tahun Ajaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tahun Ajaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Tambah Guru.Designer.vb">
       <DependentUpon>Tambah Guru.vb</DependentUpon>
     </Compile>
@@ -150,10 +162,28 @@
     <Compile Include="Tambah Kelas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Tambah Mata Pelajaran.Designer.vb">
+      <DependentUpon>Tambah Mata Pelajaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tambah Mata Pelajaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tambah Murid.Designer.vb">
+      <DependentUpon>Tambah Murid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tambah Murid.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Tambah Pengguna.Designer.vb">
       <DependentUpon>Tambah Pengguna.vb</DependentUpon>
     </Compile>
     <Compile Include="Tambah Pengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tambah Tahun Ajaran.Designer.vb">
+      <DependentUpon>Tambah Tahun Ajaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tambah Tahun Ajaran.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ubah Guru.Designer.vb">
@@ -168,10 +198,28 @@
     <Compile Include="Ubah Kelas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ubah Mata Pelajaran.Designer.vb">
+      <DependentUpon>Ubah Mata Pelajaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ubah Mata Pelajaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubah Murid.Designer.vb">
+      <DependentUpon>Ubah Murid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ubah Murid.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ubah Pengguna.Designer.vb">
       <DependentUpon>Ubah Pengguna.vb</DependentUpon>
     </Compile>
     <Compile Include="Ubah Pengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubah Tahun Ajaran.Designer.vb">
+      <DependentUpon>Ubah Tahun Ajaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ubah Tahun Ajaran.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Welcome.Designer.vb">
@@ -212,14 +260,29 @@
     <EmbeddedResource Include="Pengguna.resx">
       <DependentUpon>Pengguna.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presensi.resx">
+      <DependentUpon>Presensi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tahun Ajaran.resx">
+      <DependentUpon>Tahun Ajaran.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tambah Guru.resx">
       <DependentUpon>Tambah Guru.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tambah Kelas.resx">
       <DependentUpon>Tambah Kelas.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tambah Mata Pelajaran.resx">
+      <DependentUpon>Tambah Mata Pelajaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tambah Murid.resx">
+      <DependentUpon>Tambah Murid.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tambah Pengguna.resx">
       <DependentUpon>Tambah Pengguna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tambah Tahun Ajaran.resx">
+      <DependentUpon>Tambah Tahun Ajaran.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ubah Guru.resx">
       <DependentUpon>Ubah Guru.vb</DependentUpon>
@@ -227,8 +290,17 @@
     <EmbeddedResource Include="Ubah Kelas.resx">
       <DependentUpon>Ubah Kelas.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ubah Mata Pelajaran.resx">
+      <DependentUpon>Ubah Mata Pelajaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubah Murid.resx">
+      <DependentUpon>Ubah Murid.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ubah Pengguna.resx">
       <DependentUpon>Ubah Pengguna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubah Tahun Ajaran.resx">
+      <DependentUpon>Ubah Tahun Ajaran.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.vb</DependentUpon>
