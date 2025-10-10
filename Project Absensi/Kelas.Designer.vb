@@ -23,13 +23,6 @@ Partial Class Kelas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Mapel = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Guru = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Siswa = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Jadwal = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -37,6 +30,11 @@ Partial Class Kelas
         Me.Lanjut = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Kode_Kelas = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Kelas2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Tingkatan_Kelas = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Jurusan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Tahun_Jaran = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -46,7 +44,7 @@ Partial Class Kelas
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Mapel, Me.Guru, Me.Siswa, Me.Jadwal})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Kode_Kelas, Me.Kelas2, Me.Tingkatan_Kelas, Me.Jurusan, Me.Tahun_Jaran})
         Me.DataGridView1.Location = New System.Drawing.Point(23, 58)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
@@ -54,67 +52,6 @@ Partial Class Kelas
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(930, 508)
         Me.DataGridView1.TabIndex = 25
-        '
-        'Mapel
-        '
-        Me.Mapel.HeaderText = "Mapel"
-        Me.Mapel.MinimumWidth = 6
-        Me.Mapel.Name = "Mapel"
-        Me.Mapel.ReadOnly = True
-        Me.Mapel.Width = 232
-        '
-        'Guru
-        '
-        Me.Guru.HeaderText = "Guru"
-        Me.Guru.MinimumWidth = 6
-        Me.Guru.Name = "Guru"
-        Me.Guru.ReadOnly = True
-        Me.Guru.Width = 232
-        '
-        'Siswa
-        '
-        Me.Siswa.HeaderText = "Siswa"
-        Me.Siswa.MinimumWidth = 6
-        Me.Siswa.Name = "Siswa"
-        Me.Siswa.ReadOnly = True
-        Me.Siswa.Width = 232
-        '
-        'Jadwal
-        '
-        Me.Jadwal.HeaderText = "Jadwal"
-        Me.Jadwal.MinimumWidth = 6
-        Me.Jadwal.Name = "Jadwal"
-        Me.Jadwal.ReadOnly = True
-        Me.Jadwal.Width = 232
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(200, 19)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(53, 25)
-        Me.Label2.TabIndex = 24
-        Me.Label2.Text = "Data"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.LightGray
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(120, 13)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(78, 36)
-        Me.TextBox1.TabIndex = 23
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(18, 19)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(103, 25)
-        Me.Label1.TabIndex = 22
-        Me.Label1.Text = "Tampilkan"
         '
         'Button4
         '
@@ -185,6 +122,46 @@ Partial Class Kelas
         Me.Label3.TabIndex = 26
         Me.Label3.Text = "Cari"
         '
+        'Kode_Kelas
+        '
+        Me.Kode_Kelas.HeaderText = "Kode Kelas"
+        Me.Kode_Kelas.MinimumWidth = 6
+        Me.Kode_Kelas.Name = "Kode_Kelas"
+        Me.Kode_Kelas.ReadOnly = True
+        Me.Kode_Kelas.Width = 186
+        '
+        'Kelas2
+        '
+        Me.Kelas2.HeaderText = "Kelas"
+        Me.Kelas2.MinimumWidth = 6
+        Me.Kelas2.Name = "Kelas2"
+        Me.Kelas2.ReadOnly = True
+        Me.Kelas2.Width = 186
+        '
+        'Tingkatan_Kelas
+        '
+        Me.Tingkatan_Kelas.HeaderText = "Tingkatan Kelas"
+        Me.Tingkatan_Kelas.MinimumWidth = 6
+        Me.Tingkatan_Kelas.Name = "Tingkatan_Kelas"
+        Me.Tingkatan_Kelas.ReadOnly = True
+        Me.Tingkatan_Kelas.Width = 186
+        '
+        'Jurusan
+        '
+        Me.Jurusan.HeaderText = "Jurusan"
+        Me.Jurusan.MinimumWidth = 6
+        Me.Jurusan.Name = "Jurusan"
+        Me.Jurusan.ReadOnly = True
+        Me.Jurusan.Width = 186
+        '
+        'Tahun_Jaran
+        '
+        Me.Tahun_Jaran.HeaderText = "Tahun Ajaran"
+        Me.Tahun_Jaran.MinimumWidth = 6
+        Me.Tahun_Jaran.Name = "Tahun_Jaran"
+        Me.Tahun_Jaran.ReadOnly = True
+        Me.Tahun_Jaran.Width = 186
+        '
         'Kelas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -192,9 +169,6 @@ Partial Class Kelas
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(253, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(971, 626)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -211,9 +185,6 @@ Partial Class Kelas
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
@@ -221,8 +192,9 @@ Partial Class Kelas
     Friend WithEvents Lanjut As Button
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Mapel As DataGridViewTextBoxColumn
-    Friend WithEvents Guru As DataGridViewTextBoxColumn
-    Friend WithEvents Siswa As DataGridViewTextBoxColumn
-    Friend WithEvents Jadwal As DataGridViewTextBoxColumn
+    Friend WithEvents Kode_Kelas As DataGridViewTextBoxColumn
+    Friend WithEvents Kelas2 As DataGridViewTextBoxColumn
+    Friend WithEvents Tingkatan_Kelas As DataGridViewTextBoxColumn
+    Friend WithEvents Jurusan As DataGridViewTextBoxColumn
+    Friend WithEvents Tahun_Jaran As DataGridViewTextBoxColumn
 End Class

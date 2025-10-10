@@ -27,13 +27,15 @@ Partial Class Ubah_Pengguna
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -41,10 +43,10 @@ Partial Class Ubah_Pengguna
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(150, 178)
+        Me.Label1.Location = New System.Drawing.Point(150, 153)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(208, 29)
-        Me.Label1.TabIndex = 10
+        Me.Label1.TabIndex = 18
         Me.Label1.Text = "Ubah Pengguna"
         '
         'Label2
@@ -53,9 +55,9 @@ Partial Class Ubah_Pengguna
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(6, 58)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(60, 25)
+        Me.Label2.Size = New System.Drawing.Size(51, 25)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Email"
+        Me.Label2.Text = "Role"
         '
         'Label4
         '
@@ -63,9 +65,9 @@ Partial Class Ubah_Pengguna
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(6, 18)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(51, 25)
+        Me.Label4.Size = New System.Drawing.Size(60, 25)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Role"
+        Me.Label4.Text = "Email"
         '
         'Label3
         '
@@ -79,6 +81,8 @@ Partial Class Ubah_Pengguna
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.ComboBox2)
+        Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.TextBox4)
         Me.GroupBox1.Controls.Add(Me.TextBox3)
@@ -87,11 +91,41 @@ Partial Class Ubah_Pengguna
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Location = New System.Drawing.Point(196, 210)
+        Me.GroupBox1.Location = New System.Drawing.Point(196, 185)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(624, 189)
-        Me.GroupBox1.TabIndex = 11
+        Me.GroupBox1.Size = New System.Drawing.Size(624, 231)
+        Me.GroupBox1.TabIndex = 19
         Me.GroupBox1.TabStop = False
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Aktif", "Tidak"})
+        Me.ComboBox2.Location = New System.Drawing.Point(203, 178)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(399, 33)
+        Me.ComboBox2.TabIndex = 17
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(6, 182)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(68, 25)
+        Me.Label6.TabIndex = 16
+        Me.Label6.Text = "Status"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Admin", "Guru"})
+        Me.ComboBox1.Location = New System.Drawing.Point(203, 54)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(399, 33)
+        Me.ComboBox1.TabIndex = 15
         '
         'TextBox4
         '
@@ -104,7 +138,7 @@ Partial Class Ubah_Pengguna
         'TextBox3
         '
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(203, 95)
+        Me.TextBox3.Location = New System.Drawing.Point(203, 15)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(399, 30)
         Me.TextBox3.TabIndex = 7
@@ -112,7 +146,7 @@ Partial Class Ubah_Pengguna
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(203, 55)
+        Me.TextBox2.Location = New System.Drawing.Point(203, 95)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(399, 30)
         Me.TextBox2.TabIndex = 6
@@ -130,32 +164,22 @@ Partial Class Ubah_Pengguna
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(708, 407)
+        Me.Button2.Location = New System.Drawing.Point(708, 432)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(112, 42)
-        Me.Button2.TabIndex = 13
+        Me.Button2.TabIndex = 21
         Me.Button2.Text = "Batal"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(590, 407)
+        Me.Button1.Location = New System.Drawing.Point(590, 432)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(112, 42)
-        Me.Button1.TabIndex = 12
+        Me.Button1.TabIndex = 20
         Me.Button1.Text = "Simpan"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Admin", "Guru"})
-        Me.ComboBox1.Location = New System.Drawing.Point(203, 14)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(399, 33)
-        Me.ComboBox1.TabIndex = 14
         '
         'Ubah_Pengguna
         '
@@ -181,11 +205,13 @@ Partial Class Ubah_Pengguna
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents ComboBox1 As ComboBox
 End Class

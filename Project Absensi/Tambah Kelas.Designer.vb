@@ -27,13 +27,15 @@ Partial Class Tambah_Kelas
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -41,10 +43,10 @@ Partial Class Tambah_Kelas
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(150, 178)
+        Me.Label1.Location = New System.Drawing.Point(150, 157)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(189, 29)
-        Me.Label1.TabIndex = 14
+        Me.Label1.TabIndex = 18
         Me.Label1.Text = "Tambah Kelas"
         '
         'Label2
@@ -53,9 +55,9 @@ Partial Class Tambah_Kelas
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(6, 58)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(55, 25)
+        Me.Label2.Size = New System.Drawing.Size(62, 25)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Guru"
+        Me.Label2.Text = "Kelas"
         '
         'Label4
         '
@@ -63,9 +65,9 @@ Partial Class Tambah_Kelas
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(6, 18)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(66, 25)
+        Me.Label4.Size = New System.Drawing.Size(114, 25)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Mapel"
+        Me.Label4.Text = "Kode Kelas"
         '
         'Label3
         '
@@ -73,12 +75,14 @@ Partial Class Tambah_Kelas
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(6, 98)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(65, 25)
+        Me.Label3.Size = New System.Drawing.Size(154, 25)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Siswa"
+        Me.Label3.Text = "Tingkatan Kelas"
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.TextBox4)
         Me.GroupBox1.Controls.Add(Me.TextBox3)
@@ -87,11 +91,37 @@ Partial Class Tambah_Kelas
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Location = New System.Drawing.Point(196, 210)
+        Me.GroupBox1.Location = New System.Drawing.Point(196, 189)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(624, 189)
-        Me.GroupBox1.TabIndex = 15
+        Me.GroupBox1.Size = New System.Drawing.Size(624, 233)
+        Me.GroupBox1.TabIndex = 19
         Me.GroupBox1.TabStop = False
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox5.Location = New System.Drawing.Point(203, 181)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(399, 30)
+        Me.TextBox5.TabIndex = 11
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(6, 184)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(131, 25)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "Tahun Ajaran"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(203, 15)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(399, 30)
+        Me.TextBox1.TabIndex = 9
         '
         'TextBox4
         '
@@ -123,37 +153,29 @@ Partial Class Tambah_Kelas
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(6, 141)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(74, 25)
+        Me.Label5.Size = New System.Drawing.Size(83, 25)
         Me.Label5.TabIndex = 5
-        Me.Label5.Text = "Jadwal"
+        Me.Label5.Text = "Jurusan"
         '
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(708, 407)
+        Me.Button2.Location = New System.Drawing.Point(708, 428)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(112, 42)
-        Me.Button2.TabIndex = 17
+        Me.Button2.TabIndex = 21
         Me.Button2.Text = "Batal"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(590, 407)
+        Me.Button1.Location = New System.Drawing.Point(590, 428)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(112, 42)
-        Me.Button1.TabIndex = 16
+        Me.Button1.TabIndex = 20
         Me.Button1.Text = "Simpan"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(203, 15)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(399, 30)
-        Me.TextBox1.TabIndex = 9
         '
         'Tambah_Kelas
         '
@@ -179,6 +201,8 @@ Partial Class Tambah_Kelas
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label6 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox3 As TextBox
